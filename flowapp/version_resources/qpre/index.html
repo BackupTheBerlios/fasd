@@ -1,0 +1,128 @@
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html;charset=iso-8859-1'>
+	<title>Pretest: FASD Survey</title>
+	<link rel=stylesheet media='all' type='text/css' href='./css/questionnaire.css'>
+	<script type="text/javascript">
+	<!--
+		// Called from body onload() method.
+		// It focusses the appropiate form field.
+		function focus_editor() {
+		  if (document.getElementsByName) {
+		    elements = document.getElementsByName('userId');
+		    if (elements.length > 0) {        
+		        //alert(elements);
+		        elements[0].focus();
+		     }
+		  }
+		}	
+	-->
+	</script>
+</head>
+<body bgcolor='#FFFFFF' text='#505050' onLoad="if (window.focus_editor) window.focus_editor()">
+<table>
+  <tr>
+    <td width="100">&nbsp;</td>
+    <td>
+        <img src="./images/logo_mini_eng.gif" alt="University of Zurich" align="right"/>
+	<h2>FASD Survey</h2>
+	<p>&nbsp;</p>
+	<table>
+	<tr>
+	<td width="48%">
+	<h3>Welcome to the survey "Fun and Software Development".</h3>
+	<p>Please enter you GNU Savannah user id to display the questionnaire.
+	You may respond to the questionnare as &quot;Anonymous&quot;.
+	However, if you submit your user id you make it possible to identify
+	cases of abused respondings.<br/>
+	The submitted user id is used only as login filter and will not utilized further.
+	All submitted values are used strictly confidential.
+	</td>
+	<td>&nbsp;</td>
+	<td width="48%">
+	<h3>Herzlich Willkommen zur Umfrage "Fun and Software Development".</h3>
+	<p>Bitte geben 
+	  Sie Ihre GNU Savannah User-Id ein, um den Fragebogen einzublenden. Sie k&ouml;nnen 
+	  den Fragebogen auch als &quot;Anonymous&quot; ausf&uuml;llen. Wenn Sie sich 
+	  aber mit Ihrer User-Id anmelden, so ist es uns m&ouml;glich, F&auml;lle von 
+	  missbr&auml;uchlichem Ausf&uuml;llen des Fragebogens zu identifizieren.<br/>
+	  Die User-Id wird nur als Login-Filter ben&ouml;tigt und nicht ausgewertet. Alle 
+	  gespeicherte Werte werden streng vertraulich gehandhabt.</p>
+	</td>
+	</tr>
+	</table>
+	<p>&nbsp;</p>
+	<form method="post" action="servlet" name="Form">
+		<input type="hidden" name="requestType" value="checkLoginPre">
+		<table class="login">
+			<tr>
+				<td colspan="7">&nbsp;</td>
+			</tr>
+			<tr>
+		  		<td>&nbsp;</td>
+				<td><strong>GNU Savannah User-ID:</strong></td>
+	
+				<td><input type="text" name="userId" size="30" maxlength="30"></td>
+				<td>&nbsp;</td>
+				<td><input class="checkbox" type="checkbox" name="anonymous" /></td>
+				<td>Anonymous</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="7">&nbsp;</td>
+			</tr>
+	
+			<tr>
+				<td>&nbsp;</td>
+				<td><strong>Language/Sprache:</strong></td>
+				<td>
+					<table>
+						<tr>
+							<td class="data">
+								<input class="radio" type="radio" name="language" value="en" checked/>
+								English
+							</td>
+						</tr>
+						<tr>
+							<td class="data">
+								<input class="radio" type="radio" name="language" value="de"/>
+								Deutsch
+							</td>
+						</tr>
+					</table>
+	
+				</td>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		<input class="button" name="button" type="submit" value="Enter" class="login"/>
+	</form>
+	<p>&nbsp;</p>
+	<table style="color: #000000; background-color:#F7B042;">
+	<tr>
+	<td colspan="3"><h2 style="color: #000000;">Pretest:</h2></td>
+	</tr>
+	<tr>
+	<td width="48%">
+	<p>Many thanks for volunteering in the pretest of the questionnaire "Fun and Software Development". To participate in this pretest it doesn't matter whether you take part authenticated or as anonymous.</p>
+	<p>On the next page you'll see the prototype of the questionnaire. Please try to give an accurate answer to all questions. To fulfill this part you'll need about 10 minutes. Please save the inputted values to proceed further.</p>
+	<p>On the following page, then, you're asked some questions concerning the questionnaire. This is the pretest in the true sense of the word. You'll need about 15 to 20 minutes to process this part. Please answer these questions as precise as possible. With these answers you're helping us to improve the quality of the planned survey.</p>	
+	</td>
+	<td>&nbsp;</td>
+	<td width="48%">
+	<p>Vielen Dank dass Sie sich für einen Pretest der Umfrage "Spass und Software-Entwicklung" zur Verfügung stellen. Für den Pretest spielt es keine Rolle, auf welche Art (anonym oder angemeldet) Sie teilnehmen.</p>
+	<p>Auf der nächsten Seite wird der Prototyp des Fragebogens eingeblendet. Bitte versuchen Sie, alle Fragen sinngemäss zu beantworten. Für diesen Teil benötigen Sie ca. 10 Minuten. Bitte speichern Sie dann die eingegebenen Werte.</p>
+	<p>Als nächstes wird eine Seite angezeigt, auf welcher Sie verschiedene Sachen zum Fragebogen gefragt werden. Dies ist der eigentliche Pretest. Dieser Teil beansprucht ca. 15 bis 20 Minuten. Bitte füllen Sie diesen Teil möglichst genau aus. Damit können Sie uns helfen, die Qualität der geplanten Umfrage zu steigern.</p>
+	</td>
+	</tr>
+	</table>
+	<p>&nbsp;</p>
+	<p><i><a href="http://www.ifbf.unizh.ch/webFuehrung/blprojects/FASD/">Project FASD</a></i></p>
+    </td>
+    <td width="100">&nbsp;</td>
+  </tr>
+  <tr><td/><td colspan="2">2003/09/01</td>
+</table>
+
+</body>
+</html>

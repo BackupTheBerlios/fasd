@@ -1,0 +1,105 @@
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html;charset=iso-8859-1'>
+	<title>FASD Survey</title>
+	<link rel=stylesheet media='all' type='text/css' href='./css/questionnaire.css'>
+	<script type="text/javascript">
+	<!--
+		// Called from body onload() method.
+		// It focusses the appropiate form field.
+		function focus_editor() {
+		  if (document.getElementsByName) {
+		    elements = document.getElementsByName('userId');
+		    if (elements.length > 0) {        
+		        //alert(elements);
+		        elements[0].focus();
+		     }
+		  }
+		}	
+	-->
+	</script>
+</head>
+<body bgcolor='#FFFFFF' text='#505050' onLoad="if (window.focus_editor) window.focus_editor()">
+<table>
+  <tr>
+    <td width="100">&nbsp;</td>
+    <td>
+        <img src="./images/logo_mini_eng.gif" alt="University of Zurich" align="right"/>
+	<h2>FASD Survey</h2>
+	<p>&nbsp;</p>
+	<table>
+	<tr>
+	<td width="48%">
+	<h3>Welcome to the survey "Fun and Software Development".</h3>
+	<p>Please enter your e-mail address and the password you received to display the questionnaire.<br/>
+	The submitted values are used only to prevent abuses.
+	All submitted values are treated as strictly confidential.
+	</td>
+	<td>&nbsp;</td>
+	<td width="48%">
+	<h3>Herzlich Willkommen zur Umfrage "Fun and Software Development".</h3>
+	<p>Bitte geben 
+	  Sie Ihre eMail-Adresse und das zugeschickte Passwort ein, um den Fragebogen einzublenden.<br/>
+	  Die Login-Eingaben werden nur verwendet, um Missbräuche zu verhindern. Alle 
+	  gespeicherte Werte werden streng vertraulich gehandhabt.</p>
+	</td>
+	</tr>
+	</table>
+	<p>&nbsp;</p>
+	<p><strong>Note:</strong> For this questionnare to work, your browser must have cookies enabled.</p>
+	<form method="post" action="servlet" name="Form">
+		<input type="hidden" name="requestType" value="checkLoginQcom">
+		<table class="login">
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+			<tr>
+		  		<td>&nbsp;</td>
+				<td><strong>Login:</strong></td>
+				<td><input type="text" name="userLogin" size="30" maxlength="30"></td>
+		  		<td>&nbsp;</td>
+			</tr>
+			<tr>
+		  		<td>&nbsp;</td>
+				<td><strong>Password:</strong></td>
+				<td><input type="password" name="userPwrd" size="30" maxlength="30"></td>
+		  		<td width="20">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+	
+			<tr>
+				<td>&nbsp;</td>
+				<td><strong>Language/Sprache:</strong></td>
+				<td>
+					<table>
+						<tr>
+							<td class="data">
+								<input class="radio" type="radio" name="language" value="de" checked/>
+								Deutsch
+							</td>
+						</tr>
+						<tr>
+							<td class="data">
+								<input class="radio" type="radio" name="language" value="en"/>
+								English
+							</td>
+						</tr>
+					</table>
+	
+				</td>
+		  		<td>&nbsp;</td>
+			</tr>
+		</table>
+		<input class="button" name="button" type="submit" value="Enter" class="login"/>
+	</form>
+	<p>&nbsp;</p>
+	<p><i><a href="http://www.isu.unizh.ch/fuehrung/blprojects/FASD/">Project FASD</a></i></p>
+    </td>
+    <td width="100">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+</html>
