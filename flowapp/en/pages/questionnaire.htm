@@ -1,0 +1,1397 @@
+<script type="text/javascript">
+<!--
+function QChange(inRadio) {
+	lCells = inRadio.parentNode.parentNode.cells
+	lTD = lCells[0];
+	//alert(inRadio.nodeName);
+	if (inRadio.value == -1) {
+		lTD.className = "init";
+	}
+	else {
+		lTD.className = lCells[1].className;
+	}
+}
+//-->
+</script>
+
+<form name="Form" action="servlet" method="post">
+<input type="hidden" name="requestType" value="saveData"/>
+<input type="hidden" name="language" value="en" />
+
+<table>
+  <tr>
+    <td colspan="13">
+      <img src="./images/logo_mini_eng.gif" alt="University of Zurich" align="right"/>
+      <h2>FASD Survey: "Fun and Software Development"</h2>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="light">&nbsp;</td>
+    <td colspan="10" class="light">
+        <b>Think of your experiences while developing free/open source software.</b>
+        How often do the following statements apply to you? On the following scale the high values 
+        (<i>"always applies"</i> are always on the right, the low values (<i>"never applies"</i>) 
+        always on the left.<br/>
+        Please answer as many statements as possible and answer spontaneously and frankly.<br/>
+        <b>Read each question thoroughly and then respond quickly. Most of the time your first 
+        impression is the right one.</b>
+    </td>
+    <td class="light">&nbsp;</td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td class="bordered" colspan="2" rowspan="2" valign="bottom"><h2>How do you feel about being an open source developer?
+      <br/>How often do the following statements apply to you?</h2>
+    </td>
+    <td valign="bottom"><img src="./images/1_min_en.gif"></td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom"><img src="./images/1_max_en.gif"></td>
+    <td>&nbsp;</td>
+    <td valign="bottom" rowspan="2"><img src="./images/99_en.gif"></td>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+<tr class="comment">
+<td colspan="2">&nbsp;</td>
+<td class="bordered">---</td>
+<td class="bordered">--</td>
+<td class="bordered">-</td>
+<td class="bordered">+</td>
+<td class="bordered">++</td>
+<td class="bordered">+++</td>
+<td class="bordered" colspan="2">&nbsp;</td>
+<td class="bordered"></td>
+</tr>
+
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">1</td>
+<td class="bordered">I lose my sense of time.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q1" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q1" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q1" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q1" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q1" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q1" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q1" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">1</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">2</td>
+<td class="bordered">I cannot say how long I've been with programming.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q2" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q2" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q2" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q2" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q2" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q2" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q2" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">2</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">3</td>
+<td class="bordered">I am in a state of flow when I'm working.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q3" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q3" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q3" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q3" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q3" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q3" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q3" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">3</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">4</td>
+<td class="bordered">I forget all my worries when I'm working.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q4" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q4" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q4" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q4" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q4" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q4" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q4" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">4</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">5</td>
+<td class="bordered">It's easy for me to concentrate.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q5" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q5" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q5" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q5" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q5" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q5" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q5" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">5</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">6</td>
+<td class="bordered">I'm all wrapped up in the action.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q6" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q6" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q6" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q6" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q6" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q6" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q6" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">6</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">7</td>
+<td class="bordered">I am absolutely focused on what I'm programming.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q7" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q7" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q7" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q7" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q7" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q7" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q7" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">7</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">8</td>
+<td class="bordered">The requirements of my work are clear to me.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q8" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q8" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q8" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q8" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q8" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q8" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q8" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">8</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">9</td>
+<td class="bordered">I hardly think of the past or the future.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q9" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q9" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q9" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q9" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q9" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q9" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q9" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">9</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">10</td>
+<td class="bordered">I know exactly what is required of me.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q10" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q10" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q10" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q10" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q10" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q10" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q10" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">10</td>
+<td class="scroll_up"><a name="pg1"/><a href="#top" title="up"><img src="./images/up.gif" border="0" alt="up"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">11</td>
+<td class="bordered">There are many things I would prefer doing.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q11" value="6" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q11" value="5" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q11" value="4" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q11" value="3" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q11" value="2" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q11" value="1" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q11" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">11</td>
+<td class="scroll_down"><div class="scroll_txt">1</div><a href="#pg1" title="down"><img src="./images/down.gif" border="0" alt="down"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">12</td>
+<td class="bordered">I feel that I can cope well with the demands of the situation.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q12" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q12" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q12" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q12" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q12" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q12" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q12" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">12</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">13</td>
+<td class="bordered">My work is solely motivated by the fact that it will pay for me.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q13" value="6" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q13" value="5" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q13" value="4" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q13" value="3" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q13" value="2" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q13" value="1" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q13" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">13</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">14</td>
+<td class="bordered">I always know exactly what I have to do.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q14" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q14" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q14" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q14" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q14" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q14" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q14" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">14</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">15</td>
+<td class="bordered">I'm very absent-minded.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q15" value="6" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q15" value="5" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q15" value="4" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q15" value="3" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q15" value="2" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q15" value="1" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q15" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">15</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">16</td>
+<td class="bordered">I don't have to muse over other things.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q16" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q16" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q16" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q16" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q16" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q16" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q16" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">16</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">17</td>
+<td class="bordered">I know how to set about it.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q17" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q17" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q17" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q17" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q17" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q17" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q17" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">17</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">18</td>
+<td class="bordered">I'm completely focused.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q18" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q18" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q18" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q18" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q18" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q18" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q18" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">18</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">19</td>
+<td class="bordered">I feel able to handle the problem.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q19" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q19" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q19" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q19" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q19" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q19" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q19" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">19</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">20</td>
+<td class="bordered">I am extremely concentrated.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q20" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q20" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q20" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q20" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q20" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q20" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q20" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">20</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">21</td>
+<td class="bordered">I'm looking forward to my programming work.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q21" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q21" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q21" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q21" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q21" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q21" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q21" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">21</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">22</td>
+<td class="bordered">I enjoy my work.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q22" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q22" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q22" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q22" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q22" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q22" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q22" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">22</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">23</td>
+<td class="bordered">I feel the demands upon me are excessive.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q23" value="6" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q23" value="5" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q23" value="4" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q23" value="3" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q23" value="2" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q23" value="1" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q23" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">23</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">24</td>
+<td class="bordered">Things just seem to fall into place.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q24" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q24" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q24" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q24" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q24" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q24" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q24" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">24</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">25</td>
+<td class="bordered">I forget everything around me.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q25" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q25" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q25" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q25" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q25" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q25" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q25" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">25</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">26</td>
+<td class="bordered">I accomplish my work for its own sake.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q26" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q26" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q26" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q26" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q26" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q26" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q26" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">26</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">27</td>
+<td class="bordered">I completely concentrate on my programming work.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q27" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q27" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q27" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q27" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q27" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q27" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q27" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">27</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">28</td>
+<td class="bordered">I am easily distracted by other things.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q28" value="6" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q28" value="5" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q28" value="4" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q28" value="3" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q28" value="2" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q28" value="1" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q28" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">28</td>
+<td class="scroll_up"><a name="pg2"/><a href="#pg1" title="up"><img src="./images/up.gif" border="0" alt="up"></a></td>
+</tr>
+  <tr>
+    <td class="odd" colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td class="odd" valign="bottom"><img src="./images/2_min_odd_en.gif"></td>
+    <td class="odd" valign="bottom">&nbsp;</td>
+    <td class="odd" valign="bottom">&nbsp;</td>
+    <td class="odd" valign="bottom">&nbsp;</td>
+    <td class="odd" valign="bottom">&nbsp;</td>
+    <td class="odd" valign="bottom"><img src="./images/2_max_odd_en.gif"></td>
+    <td class="odd">&nbsp;</td>
+    <td class="odd" valign="bottom"><img src="./images/99_odd_en.gif"></td>
+    <td class="odd">&nbsp;</td>
+    <td class="scroll_down"><div class="scroll_txt">2</div><a href="#pg2" title="down"><img src="./images/down.gif" border="0" alt="down"></a></td>
+  </tr>
+<tr class="comment">
+<td class="odd" colspan="2">&nbsp;</td>
+<td class="bordered" colspan="2">&nbsp;</td>
+<td class="odd">---</td>
+<td class="odd">--</td>
+<td class="odd">-</td>
+<td class="odd">+</td>
+<td class="odd">++</td>
+<td class="odd">+++</td>
+<td class="odd" colspan="3">&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">29</td>
+<td class="bordered">I'm looking forward to further development activities for open source software.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q29" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q29" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q29" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q29" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q29" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q29" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q29" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">29</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">30</td>
+<td class="bordered">I'm prepared to increase my future commitment in the development of open source software.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q30" value="1" onClick="QChange(this)" title="---"></td>
+<td class="even"><input type="radio" name="q30" value="2" onClick="QChange(this)" title="--"></td>
+<td class="even"><input type="radio" name="q30" value="3" onClick="QChange(this)" title="-"></td>
+<td class="even"><input type="radio" name="q30" value="4" onClick="QChange(this)" title="+"></td>
+<td class="even"><input type="radio" name="q30" value="5" onClick="QChange(this)" title="++"></td>
+<td class="even"><input type="radio" name="q30" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q30" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">30</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">31</td>
+<td class="bordered">With one more hour in the day, I would program open source software.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q31" value="1" onClick="QChange(this)" title="---"></td>
+<td class="odd"><input type="radio" name="q31" value="2" onClick="QChange(this)" title="--"></td>
+<td class="odd"><input type="radio" name="q31" value="3" onClick="QChange(this)" title="-"></td>
+<td class="odd"><input type="radio" name="q31" value="4" onClick="QChange(this)" title="+"></td>
+<td class="odd"><input type="radio" name="q31" value="5" onClick="QChange(this)" title="++"></td>
+<td class="odd"><input type="radio" name="q31" value="6" onClick="QChange(this)" title="+++"></td>
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q31" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">31</td>
+<td></td>
+</tr>
+
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2" rowspan="2" class="bordered" valign="bottom"><h2>How do you feel about the open source projects?</h2></td>
+    <td valign="bottom"><img src="./images/1_min_en.gif"></td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom"><img src="./images/1_max_en.gif"></td>
+    <td>&nbsp;</td>
+    <td valign="bottom" rowspan="2"><img src="./images/99_en.gif"></td>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+<tr class="comment">
+<td colspan="2">&nbsp;</td>
+<td class="bordered">---</td>
+<td class="bordered">--</td>
+<td class="bordered">-</td>
+<td class="bordered">+</td>
+<td class="bordered">++</td>
+<td class="bordered">+++</td>
+<td class="bordered" colspan="2">&nbsp;</td>
+<td class="bordered"></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">32</td>
+<td class="bordered">How often are the open source projects you work on based on a definite project vision?</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q32" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q32" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q32" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q32" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q32" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q32" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q32" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">32</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">33</td>
+<td class="bordered">How often is there a deadline for your open source projects?</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q33" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q33" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q33" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q33" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q33" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q33" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q33" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">33</td>
+<td></td>
+</tr>
+  <tr>
+    <td class="even" colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td class="even" valign="bottom"><img src="./images/3_min_even_en.gif"></td>
+    <td class="even" valign="bottom">&nbsp;</td>
+    <td class="even" valign="bottom">&nbsp;</td>
+    <td class="even" valign="bottom">&nbsp;</td>
+    <td class="even" valign="bottom">&nbsp;</td>
+    <td class="even" valign="bottom"><img src="./images/3_max_even_en.gif"></td>
+    <td class="even">&nbsp;</td>
+    <td class="even" valign="bottom"><img src="./images/99_even_en.gif"></td>
+    <td class="even">&nbsp;</td>
+    <td></td>
+  </tr>
+<tr class="comment">
+<td class="even" colspan="2">&nbsp;</td>
+<td class="bordered" colspan="2">&nbsp;</td>
+<td class="even">---</td>
+<td class="even">--</td>
+<td class="even">-</td>
+<td class="even">+</td>
+<td class="even">++</td>
+<td class="even">+++</td>
+<td class="even" colspan="3">&nbsp;</td>
+<td class="scroll_up"><a name="pg3"/><a href="#pg2" title="up"><img src="./images/up.gif" border="0" alt="up"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">34</td>
+<td class="bordered">How important is the vision behind an open source project for you to participate in the project?</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q34" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q34" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q34" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q34" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q34" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q34" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q34" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">34</td>
+<td class="scroll_down"><div class="scroll_txt">3</div><a href="#pg3" title="down"><img src="./images/down.gif" border="0" alt="down"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">35</td>
+<td class="bordered">How important is the professional competence of the project leader for your commitment in an open source project?</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q35" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q35" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q35" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q35" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q35" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q35" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q35" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">35</td>
+<td></td>
+</tr>
+<tr>
+<td class="even">&nbsp;</td>
+<td class="even inverseLabel">36</td>
+<td><i>As a project member:</i> What are your reasons for participating in open source projects?
+</td>
+<td>&nbsp;</td>
+<td class="even" colspan="8">&nbsp;</td>
+<td class="even inverseLabel">36</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">a</td>
+<td>&nbsp;&nbsp;It was important for my work to have a certain functionality; that's why I joined the open source project and got involved.</td>
+<td>&nbsp;</td>
+<td class="even"><input type="radio" name="q36_1" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q36_1" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q36_1" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q36_1" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q36_1" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q36_1" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>                    
+<td class="even"><input type="radio" name="q36_1" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">a</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">b</td>
+<td>&nbsp;&nbsp;My employer asked me to participate in the open source project because he needed its functionality.</td>
+<td>&nbsp;</td>
+<td class="even"><input type="radio" name="q36_2" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q36_2" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q36_2" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q36_2" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q36_2" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q36_2" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q36_2" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">b</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">c</td>
+<td>&nbsp;&nbsp;Because I wanted to do something for the open source community.</td>
+<td>&nbsp;</td>
+<td class="even"><input type="radio" name="q36_3" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q36_3" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q36_3" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q36_3" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q36_3" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q36_3" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q36_3" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">c</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">d</td>
+<td>&nbsp;&nbsp;The project promised to be fun.</td>
+<td>&nbsp;</td>
+<td class="even"><input type="radio" name="q36_4" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q36_4" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q36_4" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q36_4" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q36_4" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q36_4" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q36_4" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">d</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">e</td>
+<td>&nbsp;&nbsp;My colleagues motivated me to participate in the open source project.</td>
+<td>&nbsp;</td>
+<td class="even"><input type="radio" name="q36_5" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q36_5" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q36_5" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q36_5" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q36_5" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q36_5" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q36_5" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">e</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">f</td>
+<td>&nbsp;&nbsp;By participating in the open source project you could become famous.</td>
+<td>&nbsp;</td>
+<td class="even"><input type="radio" name="q36_6" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q36_6" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q36_6" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q36_6" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q36_6" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q36_6" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q36_6" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="even inverseLabel">f</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">g</td>
+<td class="bordered">&nbsp;&nbsp;Because I wanted to learn and develop new skills.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even"><input type="radio" name="q36_7" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="even"><input type="radio" name="q36_7" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="even"><input type="radio" name="q36_7" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="even"><input type="radio" name="q36_7" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="even"><input type="radio" name="q36_7" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="even"><input type="radio" name="q36_7" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="even">&nbsp;</td>
+<td class="even"><input type="radio" name="q36_7" value="-1" checked="checked" onClick="QChange(this)" title="weiss nicht"></td>
+<td class="even inverseLabel">g</td>
+<td></td>
+</tr>
+<tr>
+<td class="odd">&nbsp;</td>
+<td class="odd inverseLabel">37</td>
+<td><i>As a project leader:</i> For what reasons did you initiate your open source project(s)?</td>
+<td>&nbsp;</td>
+<td class="odd" colspan="8">&nbsp;</td>
+<td class="odd inverseLabel">37</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">a</td>
+<td>&nbsp;&nbsp;I needed a certain functionality for my work, and I wanted to make this functionality available as an open source application.</td>
+<td>&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_1" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_1" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_1" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_1" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_1" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_1" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_1" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">a</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">b</td>
+<td>&nbsp;&nbsp;My employer asked me to start the open source project because he needed the functionality.</td>
+<td>&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_2" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_2" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_2" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_2" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_2" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_2" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_2" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">b</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">c</td>
+<td>&nbsp;&nbsp;My employer asked me to start the open source project because he could earn money with the application.</td>
+<td>&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_3" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_3" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_3" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_3" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_3" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_3" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_3" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">c</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">d</td>
+<td>&nbsp;&nbsp;Because I wanted to do something for the open source community.</td>
+<td>&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_4" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_4" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_4" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_4" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_4" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_4" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_4" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">d</td>
+<td class="scroll_up"><a name="pg4"/><a href="#pg3" title="up"><img src="./images/up.gif" border="0" alt="up"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">e</td>
+<td>&nbsp;&nbsp;One open source project in the past didn't develop as desired, therefore I had to start my own.</td>
+<td>&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_5" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_5" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_5" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_5" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_5" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_5" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_5" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">e</td>
+<td class="scroll_down"><div class="scroll_txt">4</div><a href="#pg4" title="down"><img src="./images/down.gif" border="0" alt="down"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">f</td>
+<td>&nbsp;&nbsp;The project promised to be fun.</td>
+<td>&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_6" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_6" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_6" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_6" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_6" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_6" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_6" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">f</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">g</td>
+<td>&nbsp;&nbsp;I needed assistants to complete a software project.</td>
+<td>&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_7" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_7" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_7" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_7" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_7" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_7" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_7" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">g</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">h</td>
+<td class="bordered">&nbsp;&nbsp;With an open source project you could become famous.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_8" value="1" onClick="QChange(this)" title="---"></td>       
+<td class="odd"><input type="radio" name="q37_8" value="2" onClick="QChange(this)" title="--"></td>        
+<td class="odd"><input type="radio" name="q37_8" value="3" onClick="QChange(this)" title="-"></td>         
+<td class="odd"><input type="radio" name="q37_8" value="4" onClick="QChange(this)" title="+"></td>         
+<td class="odd"><input type="radio" name="q37_8" value="5" onClick="QChange(this)" title="++"></td>        
+<td class="odd"><input type="radio" name="q37_8" value="6" onClick="QChange(this)" title="+++"></td>       
+<td class="odd">&nbsp;</td>
+<td class="odd"><input type="radio" name="q37_8" value="-1" checked="checked" onClick="QChange(this)" title="don't know"></td>
+<td class="odd inverseLabel">h</td>
+<td></td>
+</tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td class="bordered" colspan="2"><h2>How do you organize your time and commitment in the open source area?</h2></td>
+    <td colspan="8">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">38</td>
+<td class="bordered">How many patches have you developed for open source software?</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="8">
+	<select name="q38" onChange="QChange(this)">
+	<option value="-1">--</option>
+	<option value="0">0</option>
+	<option value="1">1-3</option>
+	<option value="2">4-10</option>
+	<option value="3">11-50</option>
+	<option value="4">51-100</option>
+	<option value="5">101-200</option>
+	<option value="6">201-500</option>
+	<option value="7">501-1'000</option>
+	<option value="8">1'001-2'000</option>
+	<option value="9">2'001-5'000</option>
+	<option value="10">5'001-10'000</option>
+	<option value="11">more then 10'000</option>
+	</select>
+</td>
+<td class="even inverseLabel">38</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">39</td>
+<td class="bordered">How many classes/modules/files etc. have you developed for open source software?</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="8">
+	<select name="q39" onChange="QChange(this)">
+	<option value="-1">--</option>
+	<option value="0">0</option>
+	<option value="1">1-3</option>
+	<option value="2">4-10</option>
+	<option value="3">11-50</option>
+	<option value="4">51-100</option>
+	<option value="5">101-200</option>
+	<option value="6">201-500</option>
+	<option value="7">501-1'000</option>
+	<option value="8">1'001-2'000</option>
+	<option value="9">2'001-5'000</option>
+	<option value="10">5'001-10'000</option>
+	<option value="11">more then 10'000</option>
+	</select>
+</td>
+<td class="odd inverseLabel">39</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">40</td>
+<td class="bordered">Please estimate the time you spend for the development of open source software (average hours per week).</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="3"><input type="text" name="q40" size="7" maxsize="20" onChange="QChange(this)"></td>
+<td class="even" colspan="5">hours</td>
+<td class="even inverseLabel">40</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">41</td>
+<td class="bordered">Of the total time spent for the development of open source software, how much in percent is part of your spare time?</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="3">
+<select name="q41" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">0-10</option>
+<option value="2">11-20</option>
+<option value="3">21-30</option>
+<option value="4">31-40</option>
+<option value="5">41-50</option>
+<option value="6">51-60</option>
+<option value="7">61-70</option>
+<option value="8">71-80</option>
+<option value="9">81-90</option>
+<option value="10">91-100</option>
+</select>
+</td>
+<td class="odd" colspan="5">%</td>
+<td class="odd inverseLabel">41</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">42</td>
+<td class="bordered">How much (on average, in percent) of your spare time do you spend on activities concerning open source projects?</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="3">
+<select name="q42" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">0-10</option>
+<option value="2">11-20</option>
+<option value="3">21-30</option>
+<option value="4">31-40</option>
+<option value="5">41-50</option>
+<option value="6">51-60</option>
+<option value="7">61-70</option>
+<option value="8">71-80</option>
+<option value="9">81-90</option>
+<option value="10">91-100</option>
+</select>
+</td>
+<td class="even" colspan="5">%</td>
+<td class="even inverseLabel">42</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">43</td>
+<td class="bordered">Please specify the most important position you hold or held in an open source project.</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="8">
+<select name="q43" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">project leader</option>
+<option value="2">developer</option>
+<option value="3">bug fixer</option>
+<option value="4">subscribed to a mailing list</option>
+<option value="5">user</option>
+</select>
+</td>
+<td class="odd inverseLabel">43</td>
+<td></td>
+</tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td class="bordered" colspan="2"><h2>Demographic data:</h2></td>
+    <td colspan="8">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">44</td>
+<td class="bordered">Please state the year in which you started to develop open source software.</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="8">
+<select name="q44" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1961">1961</option>
+<option value="1962">1962</option>
+<option value="1963">1963</option>
+<option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+</select>
+</td>
+<td class="even inverseLabel">44</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">45</td>
+<td class="bordered">How old were you when you started to develop open source software?</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="8">
+<select name="q45" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+<option value="60">60</option>
+</select>
+</td>
+<td class="odd inverseLabel">45</td>
+<td class="scroll_up"><a name="pg5"/><a href="#pg4" title="up"><img src="./images/up.gif" border="0" alt="up"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">46</td>
+<td class="bordered">Do you have children?</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="8">
+<select name="q46" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">yes</option>
+<option value="2">no</option>
+</select>
+</td>
+<td class="even inverseLabel">46</td>
+<td class="scroll_down"><div class="scroll_txt">5</div><a href="#pg5" title="down"><img src="./images/down.gif" border="0" alt="down"></a></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">47</td>
+<td class="bordered">Are there other adults living in the same household with you?</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="8">
+<select name="q47" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">yes</option>
+<option value="2">no</option>
+</select>
+</td>
+<td class="odd inverseLabel">47</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">48</td>
+<td class="bordered">How many pastimes (including programming) do you have?</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="8">
+<select name="q48" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">more then 5</option>
+</select>
+</td>
+<td class="even inverseLabel">48</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">49</td>
+<td class="bordered">Gender</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="8">
+<select name="q49" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">male</option>
+<option value="2">female</option>
+</select>
+</td>
+<td class="odd inverseLabel">49</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="even inverseLabel">50</td>
+<td class="bordered">Nationality</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="8">
+<select name="q50" onChange="QChange(this)">
+<option value="999">--</option>
+<option value=AFG>Afghanistan<option 
+value=ALB>Albania<option value=DZA>Algeria<option value=ASM>American Samoa<option 
+value=ADO>Andorra<option value=AGO>Angola<option value=ATG>Antigua and Barbuda<option 
+value=ARG>Argentina<option value=ARM>Armenia<option value=ABW>Aruba<option 
+value=AUS>Australia<option value=AUT>Austria<option value=AZE>Azerbaijan<option 
+value=BHS>Bahamas, The<option value=BHR>Bahrain<option value=BGD>Bangladesh<option 
+value=BRB>Barbados<option value=BLR>Belarus<option value=BEL>Belgium<option 
+value=BLZ>Belize<option value=BEN>Benin<option value=BMU>Bermuda<option 
+value=BTN>Bhutan<option value=BOL>Bolivia<option value=BIH>Bosnia and Herzegovina<option 
+value=BWA>Botswana<option value=BRA>Brazil<option value=BRN>Brunei<option 
+value=BGR>Bulgaria<option value=BFA>Burkina Faso<option value=BDI>Burundi<option 
+value=KHM>Cambodia<option value=CMR>Cameroon<option value=CAN>Canada<option value=CPV>Cape 
+Verde<option value=CYM>Cayman Islands<option value=CAF>Central African Republic<option 
+value=TCD>Chad<option value=CHI>Channel Islands<option value=CHL>Chile<option 
+value=CHN>China<option value=COL>Colombia<option value=COM>Comoros<option value=ZAR>Congo, 
+Dem. Rep.<option value=COG>Congo, Rep.<option value=CRI>Costa Rica<option value=CIV>Cote 
+d'Ivoire<option value=HRV>Croatia<option value=CUB>Cuba<option value=CYP>Cyprus<option 
+value=CZE>Czech Republic<option value=DNK>Denmark<option value=DJI>Djibouti<option 
+value=DMA>Dominica<option value=DOM>Dominican Republic<option value=ECU>Ecuador<option 
+value=EGY>Egypt, Arab Rep.<option value=SLV>El Salvador<option value=GNQ>Equatorial 
+Guinea<option value=ERI>Eritrea<option value=EST>Estonia<option value=ETH>Ethiopia<option 
+value=FRO>Faeroe Islands<option value=FJI>Fiji<option value=FIN>Finland<option 
+value=FRA>France<option value=PYF>French Polynesia<option value=GAB>Gabon<option 
+value=GMB>Gambia, The<option value=GEO>Georgia<option value=DEU>Germany<option 
+value=GHA>Ghana<option value=GRC>Greece<option value=GRL>Greenland<option 
+value=GRD>Grenada<option value=GUM>Guam<option value=GTM>Guatemala<option value=GIN>Guinea<option value=GNB>Guinea-Bissau<option value=GUY>Guyana<option value=HTI>Haiti<option value=HND>Honduras<option value=HKG>Hong Kong, China<option value=HUN>Hungary<option value=ISL>Iceland<option value=IND>India<option value=IDN>Indonesia<option value=IRN>Iran, Islamic Rep.<option value=IRQ>Iraq<option value=IRL>Ireland<option value=IMY>Isle of Man<option value=ISR>Israel<option value=ITA>Italy<option value=JAM>Jamaica<option value=JPN>Japan<option value=JOR>Jordan<option value=KAZ>Kazakhstan<option value=KEN>Kenya<option value=KIR>Kiribati<option value=PRK>Korea, Dem. Rep.<option value=KOR>Korea, Rep.<option value=KWT>Kuwait<option value=KGZ>Kyrgyz Republic<option value=LAO>Lao PDR<option value=LVA>Latvia<option value=LBN>Lebanon<option value=LSO>Lesotho<option value=LBR>Liberia<option value=LBY>Libya<option value=LIE>Liechtenstein<option value=LTU>Lithuania<option value=LUX>Luxembourg<option value=MAC>Macao, China<option value=MKD>Macedonia, FYR<option value=MDG>Madagascar<option value=MWI>Malawi<option value=MYS>Malaysia<option value=MDV>Maldives<option value=MLI>Mali<option value=MLT>Malta<option value=MHL>Marshall Islands<option value=MRT>Mauritania<option value=MUS>Mauritius<option value=MYT>Mayotte<option value=MEX>Mexico<option value=FSM>Micronesia, Fed. Sts.<option value=MDA>Moldova<option value=MCO>Monaco<option value=MNG>Mongolia<option value=MAR>Morocco<option value=MOZ>Mozambique<option value=MMR>Myanmar<option value=NAM>Namibia<option value=NPL>Nepal<option value=NLD>Netherlands<option value=ANT>Netherlands Antilles<option value=NCL>New Caledonia<option value=NZL>New Zealand<option value=NIC>Nicaragua<option value=NER>Niger<option value=NGA>Nigeria<option value=MNP>Northern Mariana Islands<option value=NOR>Norway<option value=OMN>Oman<option value=PAK>Pakistan<option value=PLW>Palau<option value=PAN>Panama<option value=PNG>Papua New Guinea<option value=PRY>Paraguay<option value=PER>Peru<option value=PHL>Philippines<option value=POL>Poland<option value=PRT>Portugal<option value=PRI>Puerto Rico<option value=QAT>Qatar<option value=ROM>Romania<option value=RUS>Russian Federation<option value=RWA>Rwanda<option value=WSM>Samoa<option value=SMR>San Marino<option value=STP>Sao Tome and Principe<option value=SAU>Saudi Arabia<option value=SEN>Senegal<option value=SYC>Seychelles<option value=SLE>Sierra Leone<option value=SGP>Singapore<option value=SVK>Slovak Republic<option value=SVN>Slovenia<option value=SLB>Solomon Islands<option value=SOM>Somalia<option value=ZAF>South Africa<option value=ESP>Spain<option value=LKA>Sri Lanka<option value=KNA>St. Kitts and Nevis<option value=LCA>St. Lucia<option value=VCT>St. Vincent and the Grenadines<option value=SDN>Sudan<option value=SUR>Suriname<option value=SWZ>Swaziland<option value=SWE>Sweden<option value=CHE>Switzerland<option value=SYR>Syrian Arab Republic<option value=TAI>Taiwan<option value=TJK>Tajikistan<option value=TZA>Tanzania<option value=THA>Thailand<option value=TMP>Timor-Leste<option value=TGO>Togo<option value=TON>Tonga<option value=TTO>Trinidad and Tobago<option value=TUN>Tunisia<option value=TUR>Turkey<option value=TKM>Turkmenistan<option value=UGA>Uganda<option value=UKR>Ukraine<option value=ARE>United Arab Emirates<option value=GBR>United Kingdom<option value=USA>United States<option value=URY>Uruguay<option value=UZB>Uzbekistan<option value=VUT>Vanuatu<option value=VEN>Venezuela, RB<option value=VNM>Vietnam<option value=VIR>Virgin Islands (U.S.)<option value=WBG>West Bank and Gaza<option value=YEM>Yemen, Rep.<option value=YUG>Yugoslavia, Fed. Rep.<option value=ZMB>Zambia<option value=ZWE>Zimbabwe</option>
+</select>
+</td>
+<td class="even inverseLabel">50</td>
+<td></td>
+</tr>
+<tr>
+<td class="init">&nbsp;</td>
+<td class="odd inverseLabel">51</td>
+<td class="bordered">Occupation</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="8">
+<select name="q51" onChange="QChange(this)">
+<option value="-1">--</option>
+<option value="1">100% employed</option>
+<option value="2">90% - 99% employed</option>
+<option value="3">80% - 89% employed</option>
+<option value="4">70% - 79% employed</option>
+<option value="5">60% - 69% employed</option>
+<option value="6">50% - 59% employed</option>
+<option value="7">40% - 49% employed</option>
+<option value="8">30% - 39% employed</option>
+<option value="9">20% - 29% employed</option>
+<option value="10">10% - 19% employed</option>
+<option value="11">student</option>
+<option value="12">unemployed</option>
+</select>
+</td>
+<td class="odd inverseLabel">51</td>
+<td></td>
+</tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td class="bordered" colspan="2"><h2>And finally:</h2></td>
+    <td colspan="8">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+<tr>
+<td class="even">&nbsp;</td>
+<td class="even inverseLabel">52</td>
+<td class="bordered">How much time did it take you to answer this questionnaire?</td>
+<td class="bordered">&nbsp;</td>
+<td class="even" colspan="3"><input type="text" name="q52" size="7" maxsize="20"></td>
+<td class="even" colspan="5">Minutes</td>
+<td class="even inverseLabel">52</td>
+<td></td>
+</tr>
+
+<tr>
+<td class="odd">&nbsp;</td>
+<td class="odd inverseLabel">53</td>
+<td class="bordered">If you have questions or remarks concerning this questionnaire, please enter them in this field:<br/>
+<textarea name="q53" cols="40" rows="3"></textarea>
+</td>
+<td class="bordered">&nbsp;</td>
+<td class="odd" colspan="8">&nbsp;</td>
+<td class="odd inverseLabel">53</td>
+<td></td>
+</tr>
+
+  <tr>
+    <td colspan="14">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="11"><input type="submit" value="Send"></td>
+    <td></td>
+  </tr>
+</table>
+
+</form>
